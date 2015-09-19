@@ -9,6 +9,91 @@ package com.zykj.toorder;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bg_color=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int bg_icon=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bg_text=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bg_text_size=0x7f010003;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_inside_color=0x7f01000a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_outside_color=0x7f01000b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_thickness=0x7f010009;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int drawableBottom=0x7f010006;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int drawableLeft=0x7f010008;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int drawableRight=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int drawableTop=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drawable_size=0x7f010004;
     }
     public static final class color {
         public static final int black=0x7f040004;
@@ -261,20 +346,32 @@ public final class R {
         public static final int devide_gray_bt=0x7f020002;
         public static final int ic_launcher=0x7f020003;
         public static final int icon_image_default=0x7f020004;
-        public static final int my_share_normal=0x7f020005;
-        public static final int tab_font_color=0x7f020006;
-        public static final int tab_order_bg=0x7f020007;
+        public static final int main_tab_user=0x7f020005;
+        public static final int my_share_normal=0x7f020006;
+        public static final int tab_bg_top=0x7f020007;
+        public static final int tab_font_color=0x7f020008;
+        public static final int tab_order_bg=0x7f020009;
+        public static final int tab_user_normal=0x7f02000a;
+        public static final int tab_user_select=0x7f02000b;
     }
     public static final class id {
-        public static final int aci_back_btn=0x7f080000;
-        public static final int aci_edit_btn=0x7f080003;
-        public static final int aci_shared_btn=0x7f080004;
-        public static final int aci_subtitle_tv=0x7f080002;
-        public static final int aci_title_tv=0x7f080001;
+        public static final int aci_back_btn=0x7f080005;
+        public static final int aci_edit_btn=0x7f080008;
+        public static final int aci_shared_btn=0x7f080009;
+        public static final int aci_subtitle_tv=0x7f080007;
+        public static final int aci_title_tv=0x7f080006;
+        public static final int tab_radio1=0x7f080001;
+        public static final int tab_radio2=0x7f080002;
+        public static final int tab_radio3=0x7f080003;
+        public static final int tab_radio4=0x7f080004;
+        public static final int tab_rgroup=0x7f080000;
+        public static final int test=0x7f08000a;
     }
     public static final class layout {
-        public static final int ui_mycommontitle=0x7f030000;
-        public static final int ui_welcome=0x7f030001;
+        public static final int ui_main_tabs=0x7f030000;
+        public static final int ui_mycommontitle=0x7f030001;
+        public static final int ui_test=0x7f030002;
+        public static final int ui_welcome=0x7f030003;
     }
     public static final class string {
         public static final int aks_version=0x7f060004;
@@ -285,11 +382,12 @@ public final class R {
         public static final int map_common=0x7f060001;
         public static final int map_site=0x7f060002;
         public static final int map_traffic=0x7f060003;
+        public static final int tab_more=0x7f060010;
+        public static final int tab_order=0x7f06000f;
         /**  tab 
          */
-        public static final int tab_index=0x7f06000d;
-        public static final int tab_order=0x7f06000e;
-        public static final int tab_seting=0x7f06000f;
+        public static final int tab_product=0x7f06000d;
+        public static final int tab_suppliers=0x7f06000e;
         public static final int title=0x7f06000b;
         public static final int xlistview_footer_hint_normal=0x7f060009;
         public static final int xlistview_footer_hint_ready=0x7f06000a;
@@ -343,4 +441,221 @@ public final class R {
          */
         public static final int ui_titletext=0x7f070001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ChangeColorIconWithText.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ChangeColorIconWithText_bg_color com.zykj.toorder:bg_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #ChangeColorIconWithText_bg_icon com.zykj.toorder:bg_icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ChangeColorIconWithText_bg_text com.zykj.toorder:bg_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #ChangeColorIconWithText_bg_text_size com.zykj.toorder:bg_text_size}</code></td><td></td></tr>
+           </table>
+           @see #ChangeColorIconWithText_bg_color
+           @see #ChangeColorIconWithText_bg_icon
+           @see #ChangeColorIconWithText_bg_text
+           @see #ChangeColorIconWithText_bg_text_size
+         */
+        public static final int[] ChangeColorIconWithText = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#bg_color}
+          attribute's value can be found in the {@link #ChangeColorIconWithText} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:bg_color
+        */
+        public static final int ChangeColorIconWithText_bg_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#bg_icon}
+          attribute's value can be found in the {@link #ChangeColorIconWithText} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zykj.toorder:bg_icon
+        */
+        public static final int ChangeColorIconWithText_bg_icon = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#bg_text}
+          attribute's value can be found in the {@link #ChangeColorIconWithText} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:bg_text
+        */
+        public static final int ChangeColorIconWithText_bg_text = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#bg_text_size}
+          attribute's value can be found in the {@link #ChangeColorIconWithText} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:bg_text_size
+        */
+        public static final int ChangeColorIconWithText_bg_text_size = 3;
+        /** Attributes that can be used with a MyRadioButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MyRadioButton_drawableBottom com.zykj.toorder:drawableBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyRadioButton_drawableLeft com.zykj.toorder:drawableLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyRadioButton_drawableRight com.zykj.toorder:drawableRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyRadioButton_drawableTop com.zykj.toorder:drawableTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyRadioButton_drawable_size com.zykj.toorder:drawable_size}</code></td><td></td></tr>
+           </table>
+           @see #MyRadioButton_drawableBottom
+           @see #MyRadioButton_drawableLeft
+           @see #MyRadioButton_drawableRight
+           @see #MyRadioButton_drawableTop
+           @see #MyRadioButton_drawable_size
+         */
+        public static final int[] MyRadioButton = {
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#drawableBottom}
+          attribute's value can be found in the {@link #MyRadioButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zykj.toorder:drawableBottom
+        */
+        public static final int MyRadioButton_drawableBottom = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#drawableLeft}
+          attribute's value can be found in the {@link #MyRadioButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zykj.toorder:drawableLeft
+        */
+        public static final int MyRadioButton_drawableLeft = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#drawableRight}
+          attribute's value can be found in the {@link #MyRadioButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zykj.toorder:drawableRight
+        */
+        public static final int MyRadioButton_drawableRight = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#drawableTop}
+          attribute's value can be found in the {@link #MyRadioButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.zykj.toorder:drawableTop
+        */
+        public static final int MyRadioButton_drawableTop = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#drawable_size}
+          attribute's value can be found in the {@link #MyRadioButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:drawable_size
+        */
+        public static final int MyRadioButton_drawable_size = 0;
+        /** Attributes that can be used with a roundedimageview.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #roundedimageview_border_inside_color com.zykj.toorder:border_inside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_outside_color com.zykj.toorder:border_outside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_thickness com.zykj.toorder:border_thickness}</code></td><td></td></tr>
+           </table>
+           @see #roundedimageview_border_inside_color
+           @see #roundedimageview_border_outside_color
+           @see #roundedimageview_border_thickness
+         */
+        public static final int[] roundedimageview = {
+            0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#border_inside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:border_inside_color
+        */
+        public static final int roundedimageview_border_inside_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#border_outside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:border_outside_color
+        */
+        public static final int roundedimageview_border_outside_color = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.zykj.toorder.R.attr#border_thickness}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.zykj.toorder:border_thickness
+        */
+        public static final int roundedimageview_border_thickness = 0;
+    };
 }

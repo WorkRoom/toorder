@@ -20,8 +20,9 @@
     <string name="edit">编辑</string>
     
     <!-- tab -->
-    <string name="tab_index">首页</string>
+    <string name="tab_product">产品</string>
+    <string name="tab_suppliers">供应商</string>
     <string name="tab_order">订单</string>
-    <string name="tab_seting">我的</string>
+    <string name="tab_more">更多</string>
     
 </resources>
