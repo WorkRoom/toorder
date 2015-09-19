@@ -48,7 +48,7 @@ public class MainActivity extends BaseTabActivity{
 		m_tab.addTab(buildTagSpec("test1", 0, intent_1));
 		m_tab.addTab(buildTagSpec("test2", 1, intent_2));
 		m_tab.addTab(buildTagSpec("test3", 2, intent_3));
-		m_tab.addTab(buildTagSpec("test3", 3, intent_4));
+		m_tab.addTab(buildTagSpec("test4", 3, intent_4));
 
 		m_rgroup = (RadioGroup) findViewById(R.id.tab_rgroup);
 		m_radio_product = (MyRadioButton) findViewById(R.id.tab_radio1);
