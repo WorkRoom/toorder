@@ -14,13 +14,14 @@ import com.zykj.toorder.R;
 public class MyCommonTitle extends RelativeLayout {
 	
 	private ImageView titleBack;
-	private TextView titleEdit;
+	private TextView titleEdit,backEdit;
 	private ImageView sharedBtn;
 
 	public MyCommonTitle(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		LayoutInflater.from(context).inflate(R.layout.ui_mycommontitle, this);
 		titleBack = (ImageView) findViewById(R.id.aci_back_btn);//后退
+		backEdit=(TextView) findViewById(R.id.aci_backedit_btn);//后退后面文字
 		titleEdit = (TextView) findViewById(R.id.aci_edit_btn);//编辑
 		sharedBtn = (ImageView) findViewById(R.id.aci_shared_btn);//分享
 		titleBack.setOnClickListener(new OnClickListener() {
@@ -31,7 +32,7 @@ public class MyCommonTitle extends RelativeLayout {
 		});
 	}
 
-	public void setLisener(OnClickListener editListener, OnClickListener sharedListener) {
+	public void setLisener(OnClickListener backEditListener,OnClickListener editListener, OnClickListener sharedListener) {
 		if(editListener != null) {
 			titleEdit.setVisibility(View.VISIBLE);
 			titleEdit.setOnClickListener(editListener);
@@ -40,6 +41,10 @@ public class MyCommonTitle extends RelativeLayout {
 			sharedBtn.setVisibility(View.VISIBLE);
 			sharedBtn.setOnClickListener(sharedListener);
 		}
+		if(backEditListener != null) {
+			backEdit.setVisibility(View.VISIBLE);
+			backEdit.setOnClickListener(sharedListener);
+		}
 	}
 	
 	public void setTitle(String title) {
@@ -47,6 +52,9 @@ public class MyCommonTitle extends RelativeLayout {
 		titleText.setText(title);
 	}
 	
+	public void setBackEditTitle(String title) {
+		backEdit.setText(title);
+	}
 	public void setEditTitle(String title) {
 		titleEdit.setText(title);
 	}

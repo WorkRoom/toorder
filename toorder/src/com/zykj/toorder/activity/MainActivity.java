@@ -40,10 +40,10 @@ public class MainActivity extends BaseTabActivity{
 		// 设置圆角边线不启用
 		// final TabWidget _widget = m_tab.getTabWidget();
 		// _widget.setStripEnabled(false);
-		intent_1 = new Intent(this, TestActivity.class).putExtra("tab", "产品");
-		intent_2 = new Intent(this, TestActivity.class).putExtra("tab", "供应商");
-		intent_3 = new Intent(this, TestActivity.class).putExtra("tab", "订单");
-		intent_4 = new Intent(this, TestActivity.class).putExtra("tab", "更多");
+		intent_1 = new Intent(this, ProductActivity.class);
+		intent_2 = new Intent(this, SuppliersActivity.class);
+		intent_3 = new Intent(this, OrderActivity.class);
+		intent_4 = new Intent(this, MoreActivity.class);
 
 		m_tab.addTab(buildTagSpec("test1", 0, intent_1));
 		m_tab.addTab(buildTagSpec("test2", 1, intent_2));

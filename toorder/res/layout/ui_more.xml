@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_myTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen" />
+
+    <LinearLayout
+        android:id="@+id/app_user_setting"
+        style="@style/ui_mysetting" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/user_seting"
+            android:textSize="@dimen/eighteen" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+    <LinearLayout
+        android:id="@+id/app_change_pass"
+        style="@style/ui_mysetting" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/change_pass"
+            android:textSize="@dimen/eighteen" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+    <LinearLayout
+        android:id="@+id/app_manage_address"
+        style="@style/ui_mysetting" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/manage_address"
+            android:textSize="@dimen/eighteen" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+    <LinearLayout
+        android:id="@+id/app_permission_setting"
+        style="@style/ui_mysetting" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/permission_setting"
+            android:textSize="@dimen/eighteen" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+    <LinearLayout
+        android:id="@+id/app_push_message"
+        style="@style/ui_mysetting" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/push_message"
+            android:textSize="@dimen/eighteen" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/user_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+</LinearLayout>

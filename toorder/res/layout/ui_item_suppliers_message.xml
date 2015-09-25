@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/supplier_mess_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:contentDescription="@drawable/message_icon"
+            android:src="@drawable/message_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/supplier_mess_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message_title"/>
+
+            <TextView
+                android:id="@+id/supplier_mess_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:singleLine="true"
+                android:text="@string/message_content"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/supplier_mess_delete"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten"
+            android:contentDescription="@drawable/delete"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/supplier_mess_head"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginTop="@dimen/ten"
+            android:contentDescription="@drawable/message_icon"
+            android:src="@drawable/supplier_message_head" />
+    </LinearLayout>
+
+</LinearLayout>

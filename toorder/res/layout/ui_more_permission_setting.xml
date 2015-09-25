@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two"
+        android:background="@color/settingdivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settingcolor" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center" 
+                android:background="@color/mgrey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:text="@string/admin" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/admin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:src="@drawable/person_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_weight="1"
+                    android:text="@string/admin_name" />
+
+                <ImageView
+                    android:layout_width="@dimen/fifteen"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center" 
+                android:background="@color/mgrey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:text="@string/cooker" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two"
+                android:background="@color/settingdivider" />
+
+            <ListView
+                android:id="@+id/list_cooker"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+            </ListView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty"
+                android:gravity="center" 
+                android:background="@color/mgrey">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:text="@string/buyer" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two"
+                android:background="@color/settingdivider" />
+
+            <ListView
+                android:id="@+id/list_buyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

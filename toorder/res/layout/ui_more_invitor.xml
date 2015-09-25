@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingcolor"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forty_five"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten"
+            android:text="@string/default_comp"
+            android:textColor="@color/hgrey" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/charactor_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen"
+        android:layout_marginRight="@dimen/fifteen"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:layout_marginTop="@dimen/twenty"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/invite_mobile"
+            android:textColor="@color/btn_blue" />
+
+        <EditText
+            android:id="@+id/input_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_weight="3"
+            android:text="@string/invitor_mobile" 
+            android:inputType="phone"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

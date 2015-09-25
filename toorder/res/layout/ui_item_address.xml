@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:text="@string/comp_contacts2" />
+
+        <TextView
+            android:id="@+id/list_item_contacts_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1"
+            android:text="@string/new_username" />
+
+        <TextView
+            android:id="@+id/list_item_contacts_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mobile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:text="@string/item_address" />
+
+<!--         <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/list_item_checkBox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="CheckBox"
+            android:visibility="visible" /> -->
+    </LinearLayout>
+
+</LinearLayout>

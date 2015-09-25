@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/toblack"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="@drawable/toorder_icon"
+                android:src="@drawable/toorder_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/invite_mobile"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/input_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:hint="@string/input_mobile"
+                    android:inputType="phone" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/code"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/input_mobile_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:inputType="text" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/identifying_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/ten"
+                    android:background="@color/morange"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/five"
+                    android:paddingRight="@dimen/five"
+                    android:text="@string/code_btn"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/pass"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:hint="@string/ed_pass"
+                    android:inputType="textPassword" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/confirm_pass"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/input_confirm_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:hint="@string/repeat_pass"
+                    android:inputType="textPassword" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -24,5 +24,114 @@
     <string name="tab_suppliers">供应商</string>
     <string name="tab_order">订单</string>
     <string name="tab_more">更多</string>
+           <!-- product -->
+    <string name="app_search">搜索</string>
+    <string name="add_product">添加产品</string>
+    <string name="product_pic">照片附件</string>
+    <string name="product_name">名称</string>
+    <string name="product_sku">sku编码</string>
+    <string name="product_sort">分类</string>
+    <string name="product_unit">单位</string>
+    <string name="product_price">价格</string>
+    <string name="product_discount">折扣</string>
+    <string name="product_groupby">分组管理</string>
+    <string name="product_description">描述</string>
+    <string name="product_totle">累计订货量</string>
+    
+     <!-- supplier -->
+    <string name="guestor_name">客户名称</string>
+    <string name="add_guestor">添加客户</string>
+    <string name="business_category">经营类别</string>
+    <string name="supplier_address">地址</string>
+    <string name="supplier_sort">供应商分组</string>
+    <string name="supplier_cancle_connection">取消关联</string>
+    <string name="supplier_connection">关联供应商</string>
+    <string name="supplier_message_title">消息标题</string>
+    <string name="supplier_message_content">消息内容消息内容消息内容消息内容消息内容消息内容</string>
+    
+       <!-- order -->
+    <string name="order_tobe_approve">待审核</string>
+    <string name="order_tobe_confirm">待确认</string>
+    <string name="order_tobe_release">待发货</string>
+    <string name="order_tobe_takeover">待收货</string>
+    <string name="order_tobe_complete">已完成</string>
+           <!--登录注册 -->
+    <string name="comp_mobile2">联系方式</string>
+    <string name="comp_address">公司地址</string>
+    <string name="comp_address2">请输入公司地址</string>
+    <string name="comp_name2">请输入公司名称</string>
+    <string name="complete_register">完成注册</string>
+    <string name="password">密码</string>
+    <string name="comp">公司</string>
+    <string name="email">邮箱</string>
+    <string name="input_mobile">请输入手机号</string>
+    <string name="input_name">请输入姓名</string>
+    <string name="input_email">请输入邮箱</string>
+    <string name="text">已注册过叮当兔账号，立即登录...</string>
+    <string name="login">登陆</string>
+    <string name="new_user">新用户？</string>
+    <string name="forget_pass">忘记密码？</string>
+    <string name="create_account">创建账号</string>
+    <string name="reset_pass">重置密码</string>
+    
+    
+   <!-- more -->
+    <string name="user_seting">个人设置</string>
+    <string name="change_pass">修改密码</string>
+    <string name="manage_address">配送地址管理</string>
+    <string name="permission_setting">权限设置</string>
+    <string name="push_message">消息推送</string>
+    <string name="login_out">退出登录</string>
+    
+       <!-- 个人设置 -->
+    <string name="comp_log">公司LOGO</string>
+    <string name="comp_message">详细信息</string>
+    <string name="comp_name">公司名称</string>
+    <string name="comp_contacts">联系人</string>
+    <string name="mobile">15055566778</string>
+    <string name="comp_mobile">移动电话</string>
+    <string name="comp_tel">固定电话</string>
+           <!-- 修改密码 -->
+    <string name="pass">密码</string>
+    <string name="old_pass">旧密码</string>
+    <string name="new_pass">新密码</string>
+    <string name="confirm_pass">确认密码</string>
+    <string name="ed_old_pass">********</string>
+    <string name="ed_pass">6-20位数字或字母</string>
+    <string name="repeat_pass">再输入一次上述密码</string>
+     <!-- 地址管理 -->
+    <string name="new_address">添加新地址</string>
+    <string name="comp_contacts2">联系人:</string>
+    <string name="new_new">新建</string>
+    <string name="new_username">姓名</string>
+    <string name="item_address">**省**市**区**街道**小区</string>
+    <string name="new_mobile">联系电话</string>
+    <string name="new_city">省市区</string>
+    <string name="new_street">街道</string>
+    <string name="default_address">设为默认地址</string>
+     <!-- 权限管理 -->
+    <string name="admin">管理员</string>
+    <string name="admin_name">总管理员姓名</string>
+    <string name="cooker">厨师</string>
+    <string name="cooker_name">厨师姓名</string>
+    <string name="buyer">采购</string>
+    <string name="buyer_name">采购员姓名</string>
+     <!-- 邀请用户 -->
+    <string name="default_comp">设置默认的公司或分支机构</string>
+    <string name="charactor">角色选择</string>
+    <string name="pause">暂停使用</string>
+    <string name="working">正常使用</string>
+    <string name="delete">删除</string>
+    <string name="code">验证码</string>
+    <string name="code_btn">获取验证码</string>
+    <string name="invite_mobile">手机号</string>
+    <string name="invitor_mobile">请输入邀请的手机号</string>
+   
+     <!-- 消息-->
+    <string name="message_title">消息标题</string>
+    <string name="message_date">2015-09-10  19:00</string>
+    <string name="message_content">消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</string>
+    
+
     
 </resources>

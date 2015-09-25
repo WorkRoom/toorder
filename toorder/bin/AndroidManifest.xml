@@ -32,10 +32,131 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activity.TestActivity"
+            android:name=".activity.ProductActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-	</application>
+        <activity
+            android:name=".activity.SuppliersActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreUserSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreChangePassActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreManageAddressActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MorePermissonActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MorePushMessageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreNewAddressActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreInviteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreCookerAndBuyerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.MoreAdminDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.ProductNewProductActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SupplierDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SupplierMessageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.SuppliersAddSupplierActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserRegisterNextActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.UserResetPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
 </manifest>

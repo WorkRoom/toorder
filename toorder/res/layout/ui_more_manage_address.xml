@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/list_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/settingcolor" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty"
+        android:background="#FAF8F9"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_add_new_address"
+            android:layout_width="@dimen/one_hundred"
+            android:layout_height="@dimen/forty_five"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@color/orange"
+            android:text="@string/new_address"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

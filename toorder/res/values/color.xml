@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!-- 基本颜色定义  -->    
+	<color name="settingcolor">#F0EFF5</color>
+	<color name="settingdivider">#D1D1D1</color>
 	<color name="red">#FF0000</color>
 	<color name="grey">#B2B2B2</color>
 	<color name="lgrey">#d6d6d6</color>
+	<color name="mgrey">#f8f8f8</color>
+	<color name="hgrey">#8c8c8c</color>
     <color name="dgrey">#C9C9C9</color>
 	<color name="black">#000000</color>
+	<color name="toblack">#222222</color>
 	<color name="white">#FFFFFF</color>
 	<color name="yellow">#ffff00</color>
 	<color name="orange">#FB6236</color>
+	<color name="blue">#057CFE</color>
 	<color name="dorange">#FF5722</color>
+	<color name="morange">#FFE3D7</color>
 	<color name="golden">#ff6600</color>
     <color name="poloere">#F8F3F0</color><!-- 米黄色  -->
     <color name="subtransparent">#e0000000</color><!-- 半透明  -->

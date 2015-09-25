@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/settingdivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/settingcolor"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty_five" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="@string/new_new" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/settingdivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/new_username"
+                    android:textColor="@color/btn_blue" />
+
+                <EditText
+                    android:id="@+id/new_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:inputType="text" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/new_mobile"
+                    android:textColor="@color/btn_blue" />
+
+                <EditText
+                    android:id="@+id/new_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:inputType="phone" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/new_city"
+                    android:textColor="@color/btn_blue" />
+
+                <EditText
+                    android:id="@+id/new_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:inputType="text" 
+                    android:background="@color/white">
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/new_street"
+                    android:textColor="@color/btn_blue" />
+
+                <EditText
+                    android:id="@+id/new_street"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2" 
+                    android:background="@color/white"
+                    android:inputType="text">
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/forty_five"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/default_address" />
+
+                <View
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.87" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_on_off"
+                    android:layout_width="43dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/toggle_btn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
