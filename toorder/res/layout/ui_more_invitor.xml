@@ -9,7 +9,10 @@
         android:id="@+id/aci_mytitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/forty_five"
@@ -28,7 +31,7 @@
     <Spinner
         android:id="@+id/charactor_spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/forty"
         android:layout_marginLeft="@dimen/fifteen"
         android:layout_marginRight="@dimen/fifteen"
         android:background="@color/white" />
@@ -54,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/twenty"
             android:layout_weight="3"
-            android:text="@string/invitor_mobile" 
+            android:hint="@string/invitor_mobile" 
             android:inputType="phone"
             android:background="@color/white"/>
     </LinearLayout>

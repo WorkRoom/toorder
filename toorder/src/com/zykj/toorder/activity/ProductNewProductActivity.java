@@ -7,7 +7,7 @@ import com.zykj.toorder.R;
 import com.zykj.toorder.view.MyCommonTitle;
 
 public class ProductNewProductActivity extends BaseActivity {
-	MyCommonTitle myCommonTitle;
+	private MyCommonTitle myCommonTitle;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

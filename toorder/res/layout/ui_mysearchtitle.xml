@@ -2,30 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/fifty"
-    android:background="@color/theme_color" >
+    android:background="@color/content_background_color" >
 
     <RelativeLayout
         android:id="@+id/rl_sousuokuang"
         android:layout_width="fill_parent"
         android:layout_height="35dp"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
         android:background="@drawable/shape_corner_down" >
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:focusable="true"
             android:background="@null"
             android:focusableInTouchMode="true" >
             <ImageView
                 android:id="@+id/search_delete"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/twenty"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
                 android:src="@drawable/ico_search"
                 android:contentDescription="@string/app_name"/>
             <EditText

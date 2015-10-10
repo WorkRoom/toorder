@@ -4,17 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.zykj.toorder.view.MyCommonTitle
-        android:id="@+id/aci_myTitle"
+    <com.zykj.toorder.view.MyMainCommonTitle
+        android:id="@+id/aci_my_maintitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginLeft="@dimen/fifteen"
-        android:layout_marginRight="@dimen/fifteen" />
-
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
     <LinearLayout
         android:id="@+id/app_user_setting"
         style="@style/ui_mysetting" >

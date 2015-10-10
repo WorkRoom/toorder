@@ -3,6 +3,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
 
+    <com.zykj.toorder.view.MyMainCommonTitle
+        android:id="@+id/aci_my_maintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:background="@color/settingcolor"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:layout_weight="1"
+                layout="@layout/ui_mysearchtitle" />
+
+            <Button
+                android:id="@+id/btn_add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginRight="@dimen/five"
+                android:layout_marginTop="@dimen/five"
+                android:background="@color/btn_grey"
+                android:paddingLeft="@dimen/two"
+                android:paddingRight="@dimen/two"
+                android:text="@string/add_product"
+                android:textSize="@dimen/twelve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty">
+
+            <ExpandableListView
+                android:id="@+id/expandableListView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:tag="@string/history">
+            </ExpandableListView>
+        </LinearLayout>
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty">
+
+            <ExpandableListView
+                android:id="@+id/expandableListView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                 android:tag="组合套餐">
+            </ExpandableListView>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

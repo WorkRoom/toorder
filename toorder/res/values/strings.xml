@@ -24,6 +24,7 @@
     <string name="tab_suppliers">供应商</string>
     <string name="tab_order">订单</string>
     <string name="tab_more">更多</string>
+    <string name="tab_toorder">叮当兔</string>
            <!-- product -->
     <string name="app_search">搜索</string>
     <string name="add_product">添加产品</string>
@@ -31,23 +32,43 @@
     <string name="product_name">名称</string>
     <string name="product_sku">sku编码</string>
     <string name="product_sort">分类</string>
-    <string name="product_unit">单位</string>
     <string name="product_price">价格</string>
+    <string name="product_unit2">单位(件)</string>
+    <string name="product_unit">单位</string>
     <string name="product_discount">折扣</string>
     <string name="product_groupby">分组管理</string>
     <string name="product_description">描述</string>
     <string name="product_totle">累计订货量</string>
+    <string name="pro_sortname">分类名</string>
+    <string name="history">历史记录</string>
+    <string name="product_title">莎拉公主  奥地利水晶项链天使泪水晶项链</string>
+    <string name="product_specification">6种规格可选</string>
+    <string name="product_delete">删除</string>
     
      <!-- supplier -->
-    <string name="guestor_name">客户名称</string>
+    <string name="supplier_intro">欢迎使用叮当兔，可以与您的供应商实现订单电子化的处理。请先填写供应商的手机号。</string>
+    <string name="supplier_name">供应商名称</string>
+    <string name="supplier_email">EMAIL</string>
     <string name="add_guestor">添加客户</string>
+    <string name="business_range">经营范围</string>
     <string name="business_category">经营类别</string>
     <string name="supplier_address">地址</string>
+    <string name="supplier_shop">供应商店铺</string>
+    <string name="supplier_shop_details">店铺详情</string>
+    <string name="supplier_materiel_purchase">物料采购项目</string>
+    <string name="supplier_select_materiel">选择关联物料</string>
+    <string name="supplier_trade_info">交易信息</string>
+    <string name="supplier_pay_info">付款信息</string>
+    <string name="supplier_pay_type">付款方式</string>
+    <string name="supplier_delivery_type">配送方式</string>
     <string name="supplier_sort">供应商分组</string>
     <string name="supplier_cancle_connection">取消关联</string>
     <string name="supplier_connection">关联供应商</string>
     <string name="supplier_message_title">消息标题</string>
     <string name="supplier_message_content">消息内容消息内容消息内容消息内容消息内容消息内容</string>
+    <string name="supplier_request_mess">请求通知消息</string>
+    <string name="supplier_sys_recomm">系统推荐供应商</string>
+    <string name="supplier_guest_sort">客户分组</string>
     
        <!-- order -->
     <string name="order_tobe_approve">待审核</string>
@@ -132,6 +153,7 @@
     <string name="message_date">2015-09-10  19:00</string>
     <string name="message_content">消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</string>
     
+<!-- 其他 -->
 
-    
+<string name="load_data">正在加载,请稍候&#8230;</string>    
 </resources>

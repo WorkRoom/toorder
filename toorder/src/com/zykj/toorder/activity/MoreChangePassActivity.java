@@ -61,7 +61,7 @@ public class MoreChangePassActivity extends BaseActivity {
 					Tools.toast(MoreChangePassActivity.this, "确认密码不能为空");return;
 				}if (!TextUtil.isPasswordLengthLegal(password3)) {
 						Tools.toast(MoreChangePassActivity.this, "密码长度合法性校验6-20位任意字符");return;
-				}if(password2!=password3){
+				}if(!password3.equals(password2)){
 							Tools.toast(MoreChangePassActivity.this, "两次输入的密码不一致,请重新输入");return;
 						}
 				//保存

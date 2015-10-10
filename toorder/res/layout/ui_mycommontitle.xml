@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/fifty"
-    android:background="@color/theme_color" >
+    android:background="@color/toptitle_color" >
 
     <ImageView
         android:id="@+id/aci_back_btn"
@@ -20,8 +20,7 @@
         android:gravity="center"
         android:text="@string/edit"
         android:layout_toRightOf="@id/aci_back_btn"
-        android:textColor="@color/white"
-        android:textSize="@dimen/fifteen"
+        android:textColor="@color/orange"
         android:visibility="gone" />
 
     <LinearLayout
@@ -36,7 +35,8 @@
             style="@style/ui_titletext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title" />
+            android:text="@string/title" 
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/aci_subtitle_tv"
@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/four"
             android:text="@string/title"
+            android:textColor="@color/black"
             android:textSize="@dimen/t_fourteen"
             android:visibility="gone" />
     </LinearLayout>
@@ -62,8 +63,7 @@
             android:gravity="center"
             android:padding="@dimen/five"
             android:text="@string/edit"
-            android:textColor="@color/white"
-            android:textSize="@dimen/t_eighteen"
+            android:textColor="@color/orange"
             android:visibility="gone" />
 
         <View

@@ -41,7 +41,10 @@ public class MorePermissonActivity extends BaseActivity {
 		case R.id.admin:
 			startActivity(new Intent(MorePermissonActivity.this, MoreAdminDetailsActivity.class));
 			break;
-
+		case R.id.aci_edit_btn:
+			startActivity(new Intent(MorePermissonActivity.this, MoreInviteActivity.class));
+			
+			break;
 		default:
 			break;
 		}

@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <com.zykj.toorder.view.MyCommonTitle
+        android:id="@+id/aci_mytitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -22,6 +23,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/forty_five" >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/supplier_intro"
+                android:layout_marginLeft="@dimen/ten"/>
         </LinearLayout>
 
         <View
@@ -38,8 +45,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:background="@color/settingdivider" />
 
             <LinearLayout
@@ -58,7 +63,7 @@
                     android:textColor="@color/btn_blue" />
 
                 <TextView
-                    android:id="@+id/new_mobile"
+                    android:id="@+id/new_supplier_mobile"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -86,11 +91,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="@string/guestor_name"
+                    android:text="@string/supplier_name"
                     android:textColor="@color/btn_blue" />
 
                 <TextView
-                    android:id="@+id/new_city"
+                    android:id="@+id/new_supplier_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -122,7 +127,7 @@
                     android:textColor="@color/btn_blue" />
 
                 <TextView
-                    android:id="@+id/new_street"
+                    android:id="@+id/new_supplier_contacts"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

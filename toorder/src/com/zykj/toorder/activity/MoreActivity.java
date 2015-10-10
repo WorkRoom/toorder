@@ -8,10 +8,11 @@ import android.widget.LinearLayout;
 import com.zykj.toorder.BaseActivity;
 import com.zykj.toorder.R;
 import com.zykj.toorder.view.MyCommonTitle;
+import com.zykj.toorder.view.MyMainCommonTitle;
 
 public class MoreActivity extends BaseActivity {
-	MyCommonTitle myCommonTitle;
-	LinearLayout user_setting, change_pass, manage_address, permission_setting,
+	private MyMainCommonTitle myCommonTitle;
+	private LinearLayout user_setting, change_pass, manage_address, permission_setting,
 			push_message;
 
 	@Override
@@ -24,7 +25,8 @@ public class MoreActivity extends BaseActivity {
 	}
 
 	private void initView() {
-		myCommonTitle=(MyCommonTitle) findViewById(R.id.aci_myTitle);
+		myCommonTitle=(MyMainCommonTitle) findViewById(R.id.aci_my_maintitle);
+		myCommonTitle.setLisener(null, null, null, null);
 		myCommonTitle.setTitle("更多");
 		user_setting = (LinearLayout) findViewById(R.id.app_user_setting);
 		change_pass = (LinearLayout) findViewById(R.id.app_change_pass);

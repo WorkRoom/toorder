@@ -61,8 +61,10 @@
     <color name="no_color">#00000000</color>
     
     <!-- 其他 -->
+    <color name="toptitle_color">#F8F8F8</color>
     <color name="theme_color">#25b6ed</color>
     <color name="theme_orange">#F69801</color>
+     <color name="theme_text_color">#FF530A</color>
     <color name="btn_color">#FA634E</color>
     <color name="dialog_color">#73498b</color>
     <color name="tab_font_normal">#343434</color>

@@ -149,4 +149,11 @@ public class TextUtil {
 		b = m.matches();
 		return b;
 	}
+	static public boolean isEmail(String strEmail) {
+		String strPattern = "^[a-zA-Z][\\w\\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\\w\\.-]*[a-zA-Z0-9]\\.[a-zA-Z][a-zA-Z\\.]*[a-zA-Z]$";
+
+		Pattern p = Pattern.compile(strPattern);
+		Matcher m = p.matcher(strEmail);
+		return m.matches();
+	}
 }

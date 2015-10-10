@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.zykj.toorder.view.MyCommonTitle
-        android:id="@+id/aci_mytitle"
+    <com.zykj.toorder.view.MyMainCommonTitle
+        android:id="@+id/aci_my_maintitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

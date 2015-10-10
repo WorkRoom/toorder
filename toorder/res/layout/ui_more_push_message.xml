@@ -3,22 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
     <com.zykj.toorder.view.MyCommonTitle
-        android:id="@+id/aci_mytitle" 
+        android:id="@+id/aci_mytitle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-    <ListView 
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dgrey" />
+
+    <ListView
         android:id="@+id/list_message"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/settingcolor"
         android:divider="@color/settingdivider"
-        android:dividerHeight="@dimen/two"
-        >
-        
+        android:dividerHeight="@dimen/two" >
     </ListView>
-    
 
 </LinearLayout>

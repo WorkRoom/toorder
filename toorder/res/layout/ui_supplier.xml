@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.zykj.toorder.view.MyCommonTitle
-        android:id="@+id/aci_mytitle"
+    <com.zykj.toorder.view.MyMainCommonTitle
+        android:id="@+id/aci_my_maintitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -16,10 +16,78 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/forty"
-            >
+            android:layout_height="@dimen/fifty"
+            android:background="#c8c7cd" >
 
-            <include layout="ui_mysearchtitle" />
+            <include
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/five"
+                android:layout_weight="1"
+                layout="@layout/ui_mysearchtitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:text="@string/supplier_request_mess" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty" >
+
+                <ExpandableListView
+                    android:id="@+id/supplier_system_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/white"
+                    android:listSelector="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:text="@string/supplier_sys_recomm" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty" >
+
+                <ExpandableListView
+                    android:id="@+id/supplier_system_recomm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/white"
+                    android:listSelector="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:text="@string/supplier_guest_sort" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty" >
+
+                <ExpandableListView
+                    android:id="@+id/supplier_guest_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@color/white"
+                    android:listSelector="@color/white" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

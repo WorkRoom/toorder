@@ -62,7 +62,7 @@ public class MoreUserSettingActivity extends BaseActivity {
 			/**
 			 * 暂时的跳转，登陆界面在其他UI的位置
 			 */
-			startActivity(new Intent(MoreUserSettingActivity.this, UserLoginActivity.class));
+			//startActivity(new Intent(MoreUserSettingActivity.this, UserLoginActivity.class));
 
 			break;
 		case R.id.aci_edit_btn:// 保存信息
@@ -77,7 +77,7 @@ public class MoreUserSettingActivity extends BaseActivity {
 			}
 			if(StringUtil.isEmpty(comp_tel)){
 				Tools.toast(MoreUserSettingActivity.this, "固定电话不能为空");return;
-			}    if(TextUtil.isPhone(comp_tel)){
+			}    if(!TextUtil.isPhone(comp_tel)){
 				Tools.toast(MoreUserSettingActivity.this, "固定电话格式不正确");return;
 			}
 			//保存信息

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@android:id/tabhost"
     android:layout_width="fill_parent"
@@ -28,37 +27,44 @@
             android:orientation="horizontal" >
 
             <!-- style="@style/tab_button_bottom" -->
-            
-	        <com.zykj.toorder.view.MyRadioButton
-	            android:id="@+id/tab_radio1"
-	            app:drawable_size="25dp"
-	            style="@style/tab_button_bottom"
-	            android:checked="true"
-            	app:drawableTop="@drawable/tab_product"
-	            android:text="@string/tab_product" />
-            
-	        <com.zykj.toorder.view.MyRadioButton
-	            android:id="@+id/tab_radio2"
-	            app:drawable_size="25dp"
-	            style="@style/tab_button_bottom"
+
+            <com.zykj.toorder.view.MyRadioButton
+                android:id="@+id/tab_radio1"
+                style="@style/tab_button_bottom"
+                android:checked="true"
+                android:text="@string/tab_product"
+                app:drawableTop="@drawable/tab_product"
+                app:drawable_size="25dp" />
+
+            <com.zykj.toorder.view.MyRadioButton
+                android:id="@+id/tab_radio2"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_suppliers"
                 app:drawableTop="@drawable/tab_suppliers"
-	            android:text="@string/tab_suppliers" />
+                app:drawable_size="25dp" />
 
-	        <com.zykj.toorder.view.MyRadioButton
-	            android:id="@+id/tab_radio3"
-	            app:drawable_size="25dp"
-	            style="@style/tab_button_bottom"
+            <com.zykj.toorder.view.MyRadioButton
+                android:id="@+id/tab_radio3"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_order"
                 app:drawableTop="@drawable/tab_order"
-	            android:text="@string/tab_order" />
+                app:drawable_size="25dp" />
 
-	        <com.zykj.toorder.view.MyRadioButton
-	            android:id="@+id/tab_radio4"
-	            app:drawable_size="25dp"
-	            style="@style/tab_button_bottom"
+            <com.zykj.toorder.view.MyRadioButton
+                android:id="@+id/tab_radio4"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_more"
                 app:drawableTop="@drawable/tab_more"
-	            android:text="@string/tab_more" />
-	        
+                app:drawable_size="25dp" />
+
+            <com.zykj.toorder.view.MyRadioButton
+                android:id="@+id/tab_radio5"
+                style="@style/tab_button_bottom"
+                android:text="@string/tab_toorder"
+                app:drawableTop="@drawable/tab_more"
+                app:drawable_size="25dp" />
         </RadioGroup>
+
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="fill_parent"
@@ -66,4 +72,5 @@
             android:layout_above="@+id/tab_rgroup" >
         </FrameLayout>
     </RelativeLayout>
+
 </TabHost>

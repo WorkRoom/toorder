@@ -18,6 +18,8 @@ public class MainActivity extends BaseTabActivity{
 	private Intent intent_2;
 	private Intent intent_3;
 	private Intent intent_4;
+	private Intent intent_5;
+	
 	// 单选按钮组
 	private RadioGroup m_rgroup;
 	// 4个单选按钮
@@ -25,6 +27,7 @@ public class MainActivity extends BaseTabActivity{
 	private MyRadioButton m_radio_suppliers;
 	private MyRadioButton m_radio_order;
 	private MyRadioButton m_radio_more;
+	private MyRadioButton m_radio_toorder;
 	
 	@SuppressWarnings("deprecation")
 	@Override
@@ -44,21 +47,25 @@ public class MainActivity extends BaseTabActivity{
 		intent_2 = new Intent(this, SuppliersActivity.class);
 		intent_3 = new Intent(this, OrderActivity.class);
 		intent_4 = new Intent(this, MoreActivity.class);
+		intent_5 = new Intent(this, ToOrderActivity.class);
 
 		m_tab.addTab(buildTagSpec("test1", 0, intent_1));
 		m_tab.addTab(buildTagSpec("test2", 1, intent_2));
 		m_tab.addTab(buildTagSpec("test3", 2, intent_3));
 		m_tab.addTab(buildTagSpec("test4", 3, intent_4));
+		m_tab.addTab(buildTagSpec("test5", 4, intent_5));
 
 		m_rgroup = (RadioGroup) findViewById(R.id.tab_rgroup);
 		m_radio_product = (MyRadioButton) findViewById(R.id.tab_radio1);
-		m_radio_product.getLayoutParams().width = Tools.M_SCREEN_WIDTH/4;
+		m_radio_product.getLayoutParams().width = Tools.M_SCREEN_WIDTH/5;
 		m_radio_suppliers = (MyRadioButton) findViewById(R.id.tab_radio2);
-		m_radio_suppliers.getLayoutParams().width = Tools.M_SCREEN_WIDTH/4;
+		m_radio_suppliers.getLayoutParams().width = Tools.M_SCREEN_WIDTH/5;
 		m_radio_order = (MyRadioButton) findViewById(R.id.tab_radio3);
-		m_radio_order.getLayoutParams().width = Tools.M_SCREEN_WIDTH/4;
+		m_radio_order.getLayoutParams().width = Tools.M_SCREEN_WIDTH/5;
 		m_radio_more = (MyRadioButton) findViewById(R.id.tab_radio4);
-		m_radio_more.getLayoutParams().width = Tools.M_SCREEN_WIDTH/4;
+		m_radio_more.getLayoutParams().width = Tools.M_SCREEN_WIDTH/5;
+		m_radio_toorder=(MyRadioButton) findViewById(R.id.tab_radio5);
+		m_radio_toorder.getLayoutParams().width=Tools.M_SCREEN_WIDTH/5;
 
 		m_rgroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -70,6 +77,8 @@ public class MainActivity extends BaseTabActivity{
 					m_tab.setCurrentTabByTag("test3");
 				} else if (checkedId == m_radio_more.getId()) {
 					m_tab.setCurrentTabByTag("test4");
+				}else if (checkedId==m_radio_toorder.getId()) {
+					m_tab.setCurrentTabByTag("test5");
 				}
 			}
 		});
