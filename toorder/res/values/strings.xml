@@ -26,7 +26,7 @@
     <string name="tab_more">更多</string>
     <string name="tab_toorder">叮当兔</string>
            <!-- product -->
-    <string name="app_search">搜索</string>
+    <string name="app_search">快速查找供应商</string>
     <string name="add_product">添加产品</string>
     <string name="product_pic">照片附件</string>
     <string name="product_name">名称</string>
@@ -59,8 +59,11 @@
     <string name="supplier_select_materiel">选择关联物料</string>
     <string name="supplier_trade_info">交易信息</string>
     <string name="supplier_pay_info">付款信息</string>
+    <string name="supplier_open_bank">开户银行</string>
+    <string name="supplier_bank_account">银行账号</string>
     <string name="supplier_pay_type">付款方式</string>
     <string name="supplier_delivery_type">配送方式</string>
+    <string name="supplier_address2">供应商地址</string>
     <string name="supplier_sort">供应商分组</string>
     <string name="supplier_cancle_connection">取消关联</string>
     <string name="supplier_connection">关联供应商</string>
@@ -68,6 +71,13 @@
     <string name="supplier_message_content">消息内容消息内容消息内容消息内容消息内容消息内容</string>
     <string name="supplier_request_mess">请求通知消息</string>
     <string name="supplier_sys_recomm">系统推荐供应商</string>
+    <string name="supplier_num">32个供应商</string>
+    <string name="supplier_list">供应商列表</string>
+    <string name="supplier_in_trade">交易中的供应商</string>
+    <string name="supplier_unresponse">未响应连接的供应商</string>
+    <string name="supplier_unconnection">已断开连接的供应商</string>
+    <string name="supplier_receive_request">收到的连接请求</string>
+    <string name="supplier_refuse_rquest">被拒绝的连接请求</string>
     <string name="supplier_guest_sort">客户分组</string>
     
        <!-- order -->

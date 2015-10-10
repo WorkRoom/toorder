@@ -273,6 +273,7 @@
                     android:background="@color/settingdivider" />
 
                 <LinearLayout
+                    android:id="@+id/ly_shop_details"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/thirty_five"
                     android:background="@color/white"
@@ -331,6 +332,7 @@
                 android:background="@color/settingdivider" />
 
             <LinearLayout
+                android:id="@+id/ly_select_conn_materiel"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/thirty_five"
                 android:background="@color/white"
@@ -388,6 +390,7 @@
                 android:background="@color/settingdivider" />
 
             <LinearLayout
+                android:id="@+id/ly_trade_info"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/thirty_five"
                 android:background="@color/white"
@@ -457,11 +460,11 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="@string/new_mobile"
+                        android:text="@string/supplier_open_bank"
                         android:textColor="@color/blue" />
 
                     <TextView
-                        android:id="@+id/supplier_mobile"
+                        android:id="@+id/supplier_bank_open"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -488,11 +491,42 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="right"
-                        android:text="@string/supplier_name"
+                        android:text="@string/supplier_bank_account"
                         android:textColor="@color/blue" />
 
                     <TextView
-                        android:id="@+id/supplier_name"
+                        android:id="@+id/supplier_bank_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/settingdivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty_five"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/comp_contacts"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/supplier_bank_contacts"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -525,6 +559,7 @@
                 android:background="@color/settingdivider" />
 
             <LinearLayout
+                android:id="@+id/ly_pay_type"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/thirty_five"
                 android:background="@color/white"
@@ -582,6 +617,7 @@
                 android:background="@color/settingdivider" />
 
             <LinearLayout
+                android:id="@+id/ly_delivery_type"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/thirty_five"
                 android:background="@color/white"
@@ -614,7 +650,62 @@
                         android:layout_marginRight="10dp"
                         android:src="@drawable/user_right" />
                 </LinearLayout>
-</LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirty" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/supplier_address2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty_five"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/new_city"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/supplier_address_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -622,44 +713,75 @@
                     android:background="@color/settingdivider" />
 
                 <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/fifteen"
-                    android:orientation="vertical" >
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty_five"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
 
-                    <Button
-                        android:id="@+id/supplier_cancle_connection"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/forty"
-                        android:layout_marginLeft="@dimen/twenty"
-                        android:layout_marginRight="@dimen/twenty"
-                        android:background="@color/settingcolor"
-                        android:text="@string/supplier_cancle_connection"
-                        android:textColor="@color/orange" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/new_street"
+                        android:textColor="@color/blue" />
 
-                    <Button
-                        android:id="@+id/supplier_connection"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/forty"
-                        android:layout_marginLeft="@dimen/twenty"
-                        android:layout_marginRight="@dimen/twenty"
-                        android:layout_marginTop="@dimen/fifteen"
-                        android:background="@color/settingcolor"
-                        android:text="@string/supplier_connection"
-                        android:textColor="@color/orange" />
-
-                    <Button
-                        android:id="@+id/delete"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/forty"
-                        android:layout_marginLeft="@dimen/twenty"
-                        android:layout_marginRight="@dimen/twenty"
-                        android:layout_marginTop="@dimen/fifteen"
-                        android:background="@color/settingcolor"
-                        android:text="@string/delete"
-                        android:textColor="@color/orange" />
+                    <TextView
+                        android:id="@+id/supplier_address_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2" >
+                    </TextView>
                 </LinearLayout>
-            
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/settingdivider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/supplier_connection_cancle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:background="@color/settingcolor"
+                    android:text="@string/supplier_cancle_connection"
+                    android:textColor="@color/orange" />
+
+                <Button
+                    android:id="@+id/supplier_connection_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:background="@color/settingcolor"
+                    android:text="@string/supplier_connection"
+                    android:textColor="@color/orange" />
+
+                <Button
+                    android:id="@+id/supplier_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/forty"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_marginTop="@dimen/fifteen"
+                    android:background="@color/settingcolor"
+                    android:text="@string/delete"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

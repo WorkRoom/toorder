@@ -51,12 +51,12 @@
 
                 <EditText
                     android:id="@+id/input_mobile"
+                    style="@style/edit_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="3"
-                    android:background="@color/white"
                     android:hint="@string/input_mobile"
                     android:inputType="phone" >
                 </EditText>
@@ -84,12 +84,12 @@
 
                 <EditText
                     android:id="@+id/input_password"
+                    style="@style/edit_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="3"
-                    android:background="@color/white"
                     android:hint="@string/ed_pass"
                     android:inputType="phone" >
                 </EditText>
@@ -117,12 +117,12 @@
 
                 <EditText
                     android:id="@+id/input_comp"
+                    style="@style/edit_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="3"
-                    android:background="@color/white"
                     android:hint="@string/comp_name2"
                     android:inputType="phone" >
                 </EditText>
@@ -150,12 +150,12 @@
 
                 <EditText
                     android:id="@+id/input_username"
+                    style="@style/edit_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="3"
-                    android:background="@color/white"
                     android:hint="@string/input_name"
                     android:inputType="phone" >
                 </EditText>
@@ -183,12 +183,12 @@
 
                 <EditText
                     android:id="@+id/input_email"
+                    style="@style/edit_text"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="3"
-                    android:background="@color/white"
                     android:hint="@string/input_email"
                     android:inputType="phone" >
                 </EditText>

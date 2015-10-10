@@ -1,7 +1,10 @@
 package com.zykj.toorder.model;
 
-public class SortModel {
+import java.io.Serializable;
 
+public class SortModel implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private String name;   //姓名
 	private String sortLetters;  //首字母
 	

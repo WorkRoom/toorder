@@ -99,12 +99,10 @@
         <item name="android:layout_height">50sp</item>
         <item name="android:background">#25b6ed</item>
     </style>
-    <style name="carpool_textview">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">55sp</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">#00000000</item>
+    <style name="text_view">
+    <!-- 背景色 -->
+        <item name="android:background">@null</item>
+        <!-- 提示颜色 -->
+        <item name="android:textColorHint">@color/edit_hint_color</item>
     </style>
 </resources>

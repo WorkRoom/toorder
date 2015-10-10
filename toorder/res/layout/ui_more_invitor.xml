@@ -59,7 +59,7 @@
             android:layout_weight="3"
             android:hint="@string/invitor_mobile" 
             android:inputType="phone"
-            android:background="@color/white"/>
+            style="@style/edit_text"/>
     </LinearLayout>
 
 </LinearLayout>

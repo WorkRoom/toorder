@@ -1,7 +1,6 @@
 package com.zykj.toorder.activity;
 
 import android.os.Bundle;
-
 import com.zykj.toorder.BaseActivity;
 import com.zykj.toorder.R;
 import com.zykj.toorder.view.MyCommonTitle;

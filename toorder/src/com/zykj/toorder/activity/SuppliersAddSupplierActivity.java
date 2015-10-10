@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.loopj.android.http.RequestParams;
@@ -17,7 +18,7 @@ import com.zykj.toorder.view.MyCommonTitle;
 
 public class SuppliersAddSupplierActivity extends BaseActivity {
 	private MyCommonTitle myCommonTitle;
-	private TextView supp_mobile, supp_name, supp_contacts;
+	private EditText supp_mobile, supp_name, supp_contacts;
 	private Button add_guester;
 
 	@Override
@@ -30,11 +31,12 @@ public class SuppliersAddSupplierActivity extends BaseActivity {
 
 	private void initView() {
 		myCommonTitle = (MyCommonTitle) findViewById(R.id.aci_mytitle);
+		myCommonTitle.setLisener(this, null, null);
 		myCommonTitle.setTitle("供应商详情");
 		myCommonTitle.setBackEditTitle("供应商");
-		supp_mobile = (TextView) findViewById(R.id.new_supplier_mobile);
-		supp_name = (TextView) findViewById(R.id.new_supplier_name);
-		supp_contacts = (TextView) findViewById(R.id.new_supplier_contacts);
+		supp_mobile = (EditText) findViewById(R.id.new_supplier_mobile);
+		supp_name = (EditText) findViewById(R.id.new_supplier_name);
+		supp_contacts = (EditText) findViewById(R.id.new_supplier_contacts);
 
 		add_guester = (Button) findViewById(R.id.btn_add_guest);
 		add_guester.setOnClickListener(new OnClickListener() {

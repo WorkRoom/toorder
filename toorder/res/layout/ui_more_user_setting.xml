@@ -111,7 +111,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="2"
-                    android:background="@color/white"
+                    style="@style/edit_text"
                     android:hint="@string/comp_name" 
                     android:inputType="text">
                 </EditText>
@@ -142,7 +142,7 @@
                     android:id="@+id/comp_contacts"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    style="@style/edit_text"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="2"
@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/white"
+                    style="@style/edit_text"
                     android:layout_weight="2"
                     android:hint="@string/mobile" >
                 </EditText>
@@ -209,7 +209,7 @@
                     android:id="@+id/comp_tel"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    style="@style/edit_text"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="2"

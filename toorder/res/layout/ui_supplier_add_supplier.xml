@@ -23,12 +23,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/forty_five" >
-            <TextView 
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/supplier_intro"
-                android:layout_marginLeft="@dimen/ten"/>
+                android:layout_marginLeft="@dimen/ten"
+                android:text="@string/supplier_intro" />
         </LinearLayout>
 
         <View
@@ -62,14 +63,14 @@
                     android:text="@string/new_mobile"
                     android:textColor="@color/btn_blue" />
 
-                <TextView
+                <EditText
                     android:id="@+id/new_supplier_mobile"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="2" >
-                </TextView>
+                    android:layout_weight="2" 
+                    style="@style/edit_text"/>
             </LinearLayout>
 
             <View
@@ -94,14 +95,14 @@
                     android:text="@string/supplier_name"
                     android:textColor="@color/btn_blue" />
 
-                <TextView
+                <EditText
                     android:id="@+id/new_supplier_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="2" >
-                </TextView>
+                    android:layout_weight="2"
+                    style="@style/edit_text"/>
             </LinearLayout>
 
             <View
@@ -126,31 +127,32 @@
                     android:text="@string/comp_contacts2"
                     android:textColor="@color/btn_blue" />
 
-                <TextView
+                <EditText
                     android:id="@+id/new_supplier_contacts"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="2" >
-                </TextView>
+                    android:layout_weight="2"
+                    style="@style/edit_text"/>
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-            
-            <Button 
+
+            <Button
                 android:id="@+id/btn_add_guest"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/forty"
                 android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/twenty"
                 android:layout_marginLeft="@dimen/fifteen"
                 android:layout_marginRight="@dimen/fifteen"
-                android:layout_marginBottom="@dimen/twenty"
+                android:background="@color/red"
                 android:text="@string/add_guestor"
-                android:textColor="@color/white"
-                android:background="@color/red"/>
+                android:textColor="@color/white" />
         </LinearLayout>
     </LinearLayout>
 

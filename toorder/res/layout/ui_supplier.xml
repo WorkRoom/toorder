@@ -25,6 +25,14 @@
                 android:layout_margin="@dimen/five"
                 android:layout_weight="1"
                 layout="@layout/ui_mysearchtitle" />
+            <ImageView 
+                android:id="@+id/img_add_supplier"
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/ten"
+                android:src="@drawable/pic_add"
+                android:contentDescription="@string/app_name"/>
         </LinearLayout>
 
         <LinearLayout
@@ -33,61 +41,306 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/settingcolor"
-                android:text="@string/supplier_request_mess" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/fifty" >
-
-                <ExpandableListView
-                    android:id="@+id/supplier_system_mess"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:cacheColorHint="@color/white"
-                    android:listSelector="@color/white" />
-            </LinearLayout>
-
-            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/ten"
                 android:background="@color/settingcolor"
                 android:text="@string/supplier_sys_recomm" />
 
             <LinearLayout
+                android:id="@+id/supplier_sys_recommend"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/fifty" >
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
 
-                <ExpandableListView
-                    android:id="@+id/supplier_system_recomm"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:cacheColorHint="@color/white"
-                    android:listSelector="@color/white" />
-            </LinearLayout>
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
 
+                    <TextView
+                        android:id="@+id/item_buyer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_sys_recomm" 
+                        android:textSize="@dimen/t_twenty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+  
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/ten"
                 android:background="@color/settingcolor"
-                android:text="@string/supplier_guest_sort" />
+                android:text="@string/supplier_list" />
 
             <LinearLayout
+                android:id="@+id/supplier_in_trade"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/fifty" >
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
 
-                <ExpandableListView
-                    android:id="@+id/supplier_guest_sort"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:cacheColorHint="@color/white"
-                    android:listSelector="@color/white" />
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_in_trade" 
+                        android:textSize="@dimen/t_twenty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
             </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider"
+                android:layout_marginLeft="@dimen/ninety"/>
+            <LinearLayout
+                android:id="@+id/supplier_unresponse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_unresponse" 
+                        android:textSize="@dimen/t_twenty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider"
+                android:layout_marginLeft="@dimen/ninety"/>
+            <LinearLayout
+                android:id="@+id/supplier_unconnection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_unconnection"
+                        android:textSize="@dimen/t_twenty" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider"
+                android:layout_marginLeft="@dimen/ninety"/>
+            <LinearLayout
+                android:id="@+id/supplier_receive_request"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_receive_request" 
+                        android:textSize="@dimen/t_twenty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider"
+                android:layout_marginLeft="@dimen/ninety"/>
+            <LinearLayout
+                android:id="@+id/supplier_refuse_rquest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/supplier_refuse_rquest" 
+                        android:textSize="@dimen/t_twenty"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/five"
+                        android:text="@string/supplier_num"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider"
+                android:layout_marginLeft="@dimen/ninety"/>
         </LinearLayout>
     </LinearLayout>
 
