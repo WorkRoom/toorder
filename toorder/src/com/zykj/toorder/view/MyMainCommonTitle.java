@@ -25,6 +25,7 @@ public class MyMainCommonTitle extends RelativeLayout {
 		backEdit = (TextView) findViewById(R.id.aci_backedit_btn);// 后退后面文字
 		titleEdit = (TextView) findViewById(R.id.aci_edit_btn);// 编辑
 		sharedBtn = (ImageView) findViewById(R.id.aci_shared_btn);// 分享
+		
 		titleBack.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

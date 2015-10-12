@@ -51,7 +51,7 @@ public class UserResetPwdActivity extends BaseActivity {
 
 	private void initView() {
 		myCommonTitle = (MyMainCommonTitle) findViewById(R.id.aci_mytitle);
-		myCommonTitle.setLisener(null, this, this, null);
+		myCommonTitle.setLisener(this, this, this, null);
 		myCommonTitle.setTitle("密码重置");
 		myCommonTitle.setEditTitle("提交");
 		myCommonTitle.setBackEditTitle("返回");
