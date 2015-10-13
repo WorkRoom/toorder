@@ -54,14 +54,14 @@
                 android:id="@+id/tab_radio4"
                 style="@style/tab_button_bottom"
                 android:text="@string/tab_more"
-                app:drawableTop="@drawable/tab_more"
+                app:drawableTop="@drawable/tab_toorder"
                 app:drawable_size="25dp" />
 
             <com.zykj.toorder.view.MyRadioButton
                 android:id="@+id/tab_radio5"
                 style="@style/tab_button_bottom"
                 android:text="@string/tab_toorder"
-                app:drawableTop="@drawable/tab_more"
+                app:drawableTop="@drawable/tab_toorder"
                 app:drawable_size="25dp" />
         </RadioGroup>
 

@@ -29,8 +29,8 @@ public class UserLoginActivity extends BaseActivity {
 	private void initView() {
 		myCommonTitle = (MyMainCommonTitle) findViewById(R.id.aci_mytitle);
 		myCommonTitle.setLisener(null,null, this, null);
-		myCommonTitle.setTitle("登陆");
-		myCommonTitle.setEditTitle("登陆");
+		myCommonTitle.setTitle("登录");
+		myCommonTitle.setEditTitle("登录");
 
 		user_mobile = (EditText) findViewById(R.id.input_mobile);
 		user_password = (EditText) findViewById(R.id.input_password);
@@ -47,18 +47,19 @@ public class UserLoginActivity extends BaseActivity {
 			String mobile = user_mobile.getText().toString().trim();
 			String password = user_password.getText().toString().trim();
 		
-			if(!TextUtil.isMobile(mobile)){
-				Tools.toast(this, "手机号格式不正确");return;
-			}
-			if(StringUtil.isEmpty(password)){
-				Tools.toast(this, "密码不能为空");return;
-			}
+//			if(!TextUtil.isMobile(mobile)){
+//				Tools.toast(this, "手机号格式不正确");return;
+//			}
+//			if(StringUtil.isEmpty(password)){
+//				Tools.toast(this, "密码不能为空");return;
+//			}
 			//登陆代码实现........
 			
 			
 			
 		
-
+			startActivity(new Intent(UserLoginActivity.this,
+					UserLoginingActivity.class));
 			
 			break;
 		case R.id.create_account://创建账号

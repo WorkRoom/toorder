@@ -86,6 +86,15 @@
     <string name="order_tobe_release">待发货</string>
     <string name="order_tobe_takeover">待收货</string>
     <string name="order_tobe_complete">已完成</string>
+     <!--ToOrder -->
+    <string name="cancle_data_synchro">取消数据同步</string>
+    <string name="wait_in_updata">等待更新中....</string>
+    <string name="history_order_updata">89个历史订单未同步</string>
+    <string name="version_code">5.4.6</string>
+    <string name="software_updata">软件升级</string>
+    <string name="contact_help">联系帮助</string>
+     
+    
            <!--登录注册 -->
     <string name="comp_mobile2">联系方式</string>
     <string name="comp_address">公司地址</string>
@@ -99,7 +108,8 @@
     <string name="input_name">请输入姓名</string>
     <string name="input_email">请输入邮箱</string>
     <string name="text">已注册过叮当兔账号，立即登录...</string>
-    <string name="login">登陆</string>
+    <string name="login">登录</string>
+    <string name="logining">登录中......</string>
     <string name="new_user">新用户？</string>
     <string name="forget_pass">忘记密码？</string>
     <string name="create_account">创建账号</string>

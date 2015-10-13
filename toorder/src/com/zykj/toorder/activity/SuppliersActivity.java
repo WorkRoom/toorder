@@ -54,22 +54,27 @@ public class SuppliersActivity extends BaseActivity {
 			break;
 		case R.id.supplier_sys_recommend:// 系统推荐供应商
 			startActivity(new Intent(SuppliersActivity.this,
-					SupplierSystemRecommandActivity.class));
+					SuppliersSystemRecommandActivity.class));
 			break;
 		case R.id.supplier_in_trade:// 交易中的供应商
-
+			startActivity(new Intent(SuppliersActivity.this,
+					SuppliersInTradeActivity.class));
 			break;
 		case R.id.supplier_unresponse:// 未响应连接的供应商
-
+			startActivity(new Intent(SuppliersActivity.this,
+					SuppliersUnRsponseActivity.class));
 			break;
 		case R.id.supplier_unconnection:// 已断开连接的供应商
-
+			startActivity(new Intent(SuppliersActivity.this,
+					SuppliersUnConnectionActivity.class));
 			break;
 		case R.id.supplier_receive_request:// 收到的连接请求
-
+			startActivity(new Intent(SuppliersActivity.this,
+					SuppliersReceiveConnectionActivity.class));
 			break;
 		case R.id.supplier_refuse_rquest:// 被拒绝的连接请求
-
+			startActivity(new Intent(SuppliersActivity.this,
+					SuppliersRefuseConnectionActivity.class));
 			break;
 		default:
 			break;
