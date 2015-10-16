@@ -85,7 +85,20 @@
     <string name="order_tobe_confirm">待确认</string>
     <string name="order_tobe_release">待发货</string>
     <string name="order_tobe_takeover">待收货</string>
+    <string name="order_tobe_payoff">待付款</string>
     <string name="order_tobe_complete">已完成</string>
+    <string name="all_stalls">所有档口</string>
+    <string name="stalls1">档口1</string>
+    <string name="unconnect_supplier">未关联供应商</string>
+    <string name="connected_supplier">已关联供应商</string>
+    <string name="order_supplier1">订单/供应商1</string>
+    <string name="order_supplier2">订单/供应商2</string>
+    <string name="order_supplier3">订单/供应商3</string>
+
+    
+    
+    
+    
      <!--ToOrder -->
     <string name="cancle_data_synchro">取消数据同步</string>
     <string name="wait_in_updata">等待更新中....</string>

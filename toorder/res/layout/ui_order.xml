@@ -9,45 +9,546 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <RadioGroup
-        android:id="@+id/tab_order"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/thirty"
-        android:layout_marginTop="@dimen/five"
-        android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:layout_height="1dp"
+        android:background="@color/settingdivider" />
 
-        <RadioButton
-            android:id="@+id/order_tab1"
-            style="@style/my_radiobutton"
-            android:checked="true"
-            android:text="@string/order_tobe_approve" />
-
-        <RadioButton
-            android:id="@+id/order_tab2"
-            style="@style/my_radiobutton"
-            android:text="@string/order_tobe_confirm" />
-
-        <RadioButton
-            android:id="@+id/order_tab3"
-            style="@style/my_radiobutton"
-            android:text="@string/order_tobe_release" />
-
-        <RadioButton
-            android:id="@+id/order_tab4"
-            style="@style/my_radiobutton"
-            android:text="@string/order_tobe_takeover" />
-
-        <RadioButton
-            android:id="@+id/order_tab5"
-            style="@style/my_radiobutton"
-            android:text="@string/order_tobe_complete" />
-    </RadioGroup>
-
-    <FrameLayout
-        android:id="@+id/order_framelayout"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_approve" />
+
+            <LinearLayout
+                android:id="@+id/tobe_approve_all_stalls"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/all_stalls"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/tobe_approve_stalls1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/stalls1"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_release" />
+
+            <LinearLayout
+                android:id="@+id/tobe_release_unconnect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/unconnect_supplier"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/tobe_release_connected"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/connected_supplier"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_confirm" />
+
+            <LinearLayout
+                android:id="@+id/tobe_confirm_supplier1_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier1"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/tobe_confirm_supplier2_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier2"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_takeover" />
+
+            <LinearLayout
+                android:id="@+id/tobe_takeover_supplier1_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier1"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/tobe_takeover_supplier2_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier2"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_payoff" />
+
+            <LinearLayout
+                android:id="@+id/tobe_payoff_supplier1_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier1"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/tobe_payoff_supplier2_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier2"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/settingcolor"
+                android:padding="@dimen/ten"
+                android:text="@string/order_tobe_complete" />
+
+            <LinearLayout
+                android:id="@+id/completed_supplier1_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:text="@string/order_supplier1"
+                        android:textSize="@dimen/t_twenty" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/ninety"
+                android:background="@color/settingdivider" />
+
+            <LinearLayout
+                android:id="@+id/completed_supplier2_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_five"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/fifty"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/person_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:text="@string/order_supplier2"
+                    android:textSize="@dimen/t_twenty" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/ten"
+                    android:layout_height="@dimen/twenty"
+                    android:layout_marginRight="@dimen/ten"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_right" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/settingdivider" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
