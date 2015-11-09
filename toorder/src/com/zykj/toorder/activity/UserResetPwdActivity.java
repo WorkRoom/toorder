@@ -26,8 +26,8 @@ public class UserResetPwdActivity extends BaseActivity {
 	private Button identifying_code;
 	private EditText user_mobile, mobile_code, user_password, confirmpwd;
 	private String mobile, password;
-	private static String APPKEY = "abf87d5eac6a";
-	private static String APPKEYSECRET = "4c85fbe195ff291eb8e6a79a3d6e4a40";
+	private static String APPKEY = "b3354026d0c6";
+	private static String APPKEYSECRET = "d83d91b896a72703fd5838947a2687ae";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

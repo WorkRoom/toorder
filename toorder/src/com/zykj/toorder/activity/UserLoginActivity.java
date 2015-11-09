@@ -59,7 +59,7 @@ public class UserLoginActivity extends BaseActivity {
 			
 		
 			startActivity(new Intent(UserLoginActivity.this,
-					UserLoginingActivity.class));
+					MainActivity.class));
 			
 			break;
 		case R.id.create_account://创建账号
